@@ -1,0 +1,15 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string word, line;
+    
+    cout << "Enter a phrase: ";
+    cin >> word;               // فقط تا اولین فاصله می‌خواند
+    cin.ignore();              // پاک کردن newline از بافر
+    getline(cin, line);        // کل خط را می‌خواند
+    
+    cout << "cin reads: " << word << ", getline reads: " << line << endl;
+    return 0;
+}
