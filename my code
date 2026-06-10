@@ -6,9 +6,9 @@ int main() {
     string word, line;
     
     cout << "Enter a phrase: ";
-    cin >> word;               // فقط تا اولین فاصله می‌خواند
-    cin.ignore();              // پاک کردن newline از بافر
-    getline(cin, line);        // کل خط را می‌خواند
+    cin >> word;              
+    cin.ignore();        
+    getline(cin, line);    
     
     cout << "cin reads: " << word << ", getline reads: " << line << endl;
     return 0;
